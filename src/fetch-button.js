@@ -1,4 +1,4 @@
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html, css } from 'lit';
 
 class FetchButton extends LitElement {
   static get properties() {
@@ -44,7 +44,6 @@ class FetchButton extends LitElement {
   }
 
   render() {
-    console.log(this.responseData, 'aqui es');
     return html`
       ${this.button &&
       html`<button @click=${this.fetchData}>${this.buttonText}</button>
@@ -72,4 +71,3 @@ class FetchButton extends LitElement {
 }
 
 customElements.define('fetch-button', FetchButton);
-export { FetchButton };
