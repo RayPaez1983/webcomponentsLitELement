@@ -13,18 +13,10 @@ For the most up to date information on [UI development browser support](https://
 [![License](https://img.shields.io/npm/l/@alaskaairux/auro-datetime?color=blue&style=for-the-badge)](https://www.apache.org/licenses/LICENSE-2.0)
 
 ```shell
-$ npm i @alaskaairux/auro-datetime
+$ npm i webcomponentslitelement
 ```
 
 Installing as a direct, dev or peer dependency is up to the user installing the package. If you are unsure as to what type of dependency you should use, consider reading this [stack overflow](https://stackoverflow.com/questions/18875674/whats-the-difference-between-dependencies-devdependencies-and-peerdependencies) answer.
-
-### Design Token CSS Custom Property dependency
-
-The use of any Auro custom element has a dependency on the [Auro Design Tokens](https://auro.alaskaair.com/getting-started/developers/design-tokens).
-
-### CSS Custom Property fallbacks
-
-[CSS custom properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) are [not supported](https://auro.alaskaair.com/support/custom-properties) in older browsers. For this, fallback properties are pre-generated and included with the npm.
 
 Any update to the Auro Design Tokens will be immediately reflected with browsers that support CSS custom properties, legacy browsers will require updated components with pre-generated fallback properties.
 
@@ -39,7 +31,11 @@ import 'webcomponentslitelement';
 **Reference component in HTML**
 
 ```html
-<auro-datetime type="date"></auro-datetime>
+<fetch-button
+  button
+  buttonText="fetch-button"
+  url="https://jsonplaceholder.typicode.com/comments"
+></fetch-button>
 ```
 
 ## Install bundled assets from CDN
@@ -55,14 +51,12 @@ Since the legacy bundle includes many polyfills that are not needed by modern br
 Default auro-datetime
 
 ```html
-<auro-datetime type="date"></auro-datetime>
+<fetch-button
+  button
+  buttonText="fetch-button"
+  url="https://jsonplaceholder.typicode.com/comments"
+></fetch-button>
 ```
-
-## Development
-
-In order to develop against this project, if you are not part of the core team, you will be required to fork the project prior to submitting a pull request.
-
-Please be sure to review the [contribution guidelines](https://auro.alaskaair.com/getting-started/developers/contributing) for this project. Please make sure to **pay special attention** to the **conventional commits** section of the document.
 
 ### Start development environment
 
