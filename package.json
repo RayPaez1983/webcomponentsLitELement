@@ -1,6 +1,6 @@
 {
   "name": "webcomponentslitelement",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,8 +11,12 @@
     "type": "git",
     "url": "git+https://github.com/my-username/my-package.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "example",
+    "npm"
+  ],
+  "author": "Ramon Paez",
+  "license": "MIT",
   "dependencies": {
     "lit-element": "^3.3.2"
   }
